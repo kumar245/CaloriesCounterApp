@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8bc34a"
+    android:layout_height="match_parent"
+    tools:context="com.kumar.user.caloriescounterapp.MainActivity">
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#ff3a382f"
+        />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/titletext"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/apple"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_bg"
+        android:layout_below="@+id/logo"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_food"
+            android:layout_marginTop="18dp"
+            android:padding="14dp"
+            android:id="@+id/foodEditText"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/caloriesEditText"
+            android:hint="@string/hint_calories"
+            android:padding="14dp"
+            android:inputType="number" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_button"
+            android:layout_marginTop="24dp"
+            android:text="@string/submit_text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
